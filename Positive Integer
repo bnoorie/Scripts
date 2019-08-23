@@ -1,0 +1,35 @@
+integer()
+{
+
+read -ra array -p " give a set of numbers"
+
+a=1
+b=( $(printf "%s\n" ${array[@]} | sort -n) )
+
+for i in ${b[@]}
+do
+
+        if(($i != $a)); then
+
+#         echo "the smallest positive integer is $a"
+        continue;
+
+        else
+
+           a=$((a + 1))
+
+        fi
+done
+echo "the smallest positive integer is $a"
+
+#for i in ${array[@]}
+#do
+
+#echo $i
+#done
+
+}
+
+
+
+integer
