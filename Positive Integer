@@ -22,12 +22,6 @@ do
 done
 echo "the smallest positive integer is $a"
 
-#for i in ${array[@]}
-#do
-
-#echo $i
-#done
-
 }
 
 
